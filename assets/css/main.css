@@ -606,7 +606,12 @@ body.loaded {
   text-transform: uppercase;
   z-index: 20;
 }
-
+@media (max-width: 768px) {
+  .preloader .preloader-heading .load-text span {
+    font-size: 13px !important;
+    letter-spacing: 2px;
+  }
+}
 .load-text span {
   -webkit-animation: loading 1s infinite alternate;
   animation: loading 1s infinite alternate;
